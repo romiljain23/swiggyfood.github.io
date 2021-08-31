@@ -33,7 +33,7 @@
             founded in 2014. Swiggy is based in Bangalore, India. In 2013, the two founders, Nandan Reddy and Sriharsha
             Majety, designed an e-commerce website called Bundl to facilitate courier service and shipping within India.
             Bundl was halted, and was rebranded to enter the food delivery market. </p>
-        <button class="btn">Order Now</button>
+        <button id="btn1" onclick="order()">Order Now</button>
     </section>
     <section class="services-container">
         <h1 class="h-primary center">
@@ -105,7 +105,7 @@
                 <div>
                     <textarea name="name" id="msg" cols="30" rows="10" style="width: 100%;"></textarea>
                 </div>
-                <button class="btn" style="font-size: 20px;">Submit</button>
+                <button id="btn2" style="font-size: 20px;" onclick="submitform()">Submit</button>
             </form>
         </div>
     </section>
@@ -114,6 +114,17 @@
             Copyright &copy; www.swiggy.co.in All rights reserved @ Romil Jain
         </div>
     </footer>
+    
+    <script>
+        function order(){
+            let btn1=document.getElementById("btn1");
+            btn1=alert("This Service is Temorarily Unavailable");
+        }
+        function submitform(){
+            let btn2=document.getElementById("btn2");
+            btn2=alert("Thank You for connecting with us...");
+        }
+    </script>
 </body>
 
 </html>
